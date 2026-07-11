@@ -1,0 +1,249 @@
+/* ===========================
+   Overlay
+=========================== */
+
+.viz-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    backdrop-filter:blur(10px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    overflow:hidden;
+}
+
+/* ===========================
+   Modal
+=========================== */
+
+.viz-modal{
+
+    position:relative;
+
+    width:95vw;
+    height:95vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* ===========================
+   Image
+=========================== */
+
+.viz-image{
+
+    max-width:88vw;
+    max-height:72vh;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:18px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    user-select:none;
+}
+
+/* ===========================
+   Info
+=========================== */
+
+.viz-info{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    max-width:900px;
+
+}
+
+.viz-info h2{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:12px;
+
+}
+
+.viz-tech{
+
+    color:#22D3EE;
+
+    margin-bottom:16px;
+
+}
+
+.viz-description{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+.viz-counter{
+
+    margin-top:20px;
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Close
+=========================== */
+
+.viz-close{
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1F2937;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.viz-close:hover{
+
+    background:#22D3EE;
+
+    color:#111827;
+
+}
+
+/* ===========================
+   Arrows
+=========================== */
+
+.viz-arrow{
+
+    position:absolute;
+
+    top:45%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(17,24,39,.8);
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.viz-arrow:hover{
+
+    background:#22D3EE;
+
+    color:#111827;
+
+}
+
+.viz-arrow.left{
+
+    left:35px;
+
+}
+
+.viz-arrow.right{
+
+    right:35px;
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.viz-image{
+
+max-width:95vw;
+
+max-height:55vh;
+
+}
+
+.viz-info h2{
+
+font-size:24px;
+
+}
+
+.viz-description{
+
+font-size:15px;
+
+padding:0 20px;
+
+}
+
+.viz-arrow{
+
+width:45px;
+
+height:45px;
+
+font-size:22px;
+
+}
+
+.viz-arrow.left{
+
+left:12px;
+
+}
+
+.viz-arrow.right{
+
+right:12px;
+
+}
+
+}

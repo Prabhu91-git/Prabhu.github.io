@@ -1,0 +1,192 @@
+/* ==========================================
+   Visualization Gallery
+========================================== */
+
+.visualization {
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+    box-sizing:border-box;
+}
+
+.gallery-subtitle {
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: #94A3B8;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* ==========================================
+   Gallery Grid
+========================================== */
+
+.gallery-grid {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.gallery-card {
+    
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    background: #111827;
+
+    transition: .35s ease;
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.25);
+
+}
+
+.gallery-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 30px 50px rgba(0,0,0,.35);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+
+    display:block;
+
+    transition:transform .6s ease;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Overlay
+========================================== */
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.15),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s ease;
+
+}
+
+.gallery-card:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.overlay-content{
+
+    padding:24px;
+
+}
+
+.overlay-content h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.overlay-content p{
+
+    color:#22D3EE;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media(max-width:1100px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:768px){
+
+.visualization{
+
+padding:70px 16px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.overlay-content h3{
+
+font-size:18px;
+
+}
+
+.gallery-subtitle{
+
+font-size:16px;
+
+}
+
+}

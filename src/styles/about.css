@@ -1,0 +1,34 @@
+.about-content{
+
+   max-width:850px;
+
+    margin:0 auto;
+ 
+    border-left:3px solid #22D3EE;
+
+    padding-left:30px;
+}
+
+.about-content p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+    font-size:19px;
+
+    margin-bottom:32px;
+
+    
+}
+
+.about-content strong{
+
+    color:#22D3EE;
+
+    font-weight:600;
+}
+.about-content p:last-child{
+
+    margin-bottom:0;
+}

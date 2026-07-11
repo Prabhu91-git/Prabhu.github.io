@@ -1,0 +1,73 @@
+
+.experience {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-card {
+    background: #111827;
+    border-left: 4px solid #22D3EE;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(34, 211, 238, 0.12);
+}
+
+.period {
+    display: inline-block;
+    color: #22D3EE;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.timeline-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.timeline-card h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #94A3B8;
+    margin-bottom: 18px;
+}
+
+.timeline-card p {
+    color: #CBD5E1;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .experience {
+        padding: 80px 20px;
+    }
+
+    .timeline-card {
+        padding: 24px;
+    }
+
+    .timeline-card h3 {
+        font-size: 20px;
+    }
+
+    .timeline-card h4 {
+        font-size: 16px;
+    }
+
+}

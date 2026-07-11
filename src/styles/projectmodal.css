@@ -1,0 +1,410 @@
+/* ===========================
+   Overlay
+=========================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    animation: fadeIn .3s ease;
+}
+
+/* ===========================
+   Modal
+=========================== */
+
+.project-modal {
+
+    position: relative;
+
+    width: min(1100px, 95vw);
+
+    max-height: 95vh;
+
+    background: #111827;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    padding: 28px;
+
+    color: white;
+
+    animation: scaleIn .25s ease;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+/* ===========================
+   Title
+=========================== */
+
+.project-modal h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #22D3EE;
+}
+
+.project-body{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+/* ===========================
+   Close Button
+=========================== */
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    background: #1f2937;
+    color: white;
+    transition: .3s;
+}
+
+.close-btn:hover {
+    background: #22D3EE;
+    color: #111827;
+}
+
+/* ===========================
+   Video
+=========================== */
+
+.modal-video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.modal-content{
+
+    overflow-y:auto;
+
+    flex:1;
+
+    padding-right:8px;
+
+}
+
+.modal-tech{
+
+    text-align:center;
+
+    color:#22D3EE;
+
+    margin-bottom:25px;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+.nda-container{
+
+    text-align:center;
+
+    padding:20px 10px;
+
+}
+
+.nda-icon{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+
+}
+
+.nda-container h3{
+
+    color:#22D3EE;
+
+    margin-bottom:20px;
+
+}
+
+.nda-overview{
+
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+.nda-container h4{
+
+    margin-bottom:20px;
+
+}
+
+.nda-list{
+
+    list-style:none;
+
+    padding:0;
+
+    max-width:420px;
+
+    margin:0 auto;
+
+    text-align:left;
+
+}
+
+.nda-list li{
+
+    margin-bottom:12px;
+
+    color:#E5E7EB;
+
+}
+
+.nda-note{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+
+/* ===========================
+   Gallery
+=========================== */
+
+.gallery-container{
+
+    position:relative;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:500px;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+    background:#0f172a;
+
+}
+
+.gallery-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(17,24,39,.85);
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:10;
+
+}
+
+.gallery-btn:hover {
+    background: #22D3EE;
+    color: #111827;
+}
+
+
+.gallery-btn:first-of-type{
+
+    left:20px;
+
+}
+
+.gallery-btn:last-of-type{
+
+    right:20px;
+
+}
+/* ===========================
+   Dots
+=========================== */
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #64748b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dot.active {
+    background: #22D3EE;
+    transform: scale(1.2);
+}
+
+/* ===========================
+   Tour iframe
+=========================== */
+
+.tour-frame {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    border-radius: 12px;
+}
+
+/* ===========================
+   Description
+=========================== */
+
+.modal-description {
+    margin-top: 24px;
+    line-height: 1.8;
+    color: #CBD5E1;
+    text-align: justify;
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(.92);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+.project-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-modal::-webkit-scrollbar-thumb {
+    background: #22D3EE;
+    border-radius: 10px;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+    .project-modal {
+        padding: 20px;
+    }
+
+    .gallery-container {
+        gap: 10px;
+    }
+
+    .gallery-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .tour-frame {
+        height: 55vh;
+    }
+
+    .project-modal h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:900px){
+
+.project-body{
+
+grid-template-columns:1fr;
+
+}
+
+}
