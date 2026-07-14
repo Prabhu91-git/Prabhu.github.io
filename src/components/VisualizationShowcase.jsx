@@ -63,7 +63,7 @@ const visualizations = [
   },
   {
     title: "Executive Workspace",
-    image: `/${base}images/renders/Img_8.jpg`,
+    image: `${base}images/renders/Img_8.jpg`,
     tech: "Unreal Engine 5",
     description:
       "A premium office visualization with elegant finishes.",
