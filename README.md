@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-https://github.com/Prabhu91-git/Prabhu.github.io/
+[https://github.com/Prabhu91-git/Prabhu.github.io/](https://prabhu91-git.github.io/Prabhu.github.io/)
 
 ## 🛠️ Technologies Used
 
