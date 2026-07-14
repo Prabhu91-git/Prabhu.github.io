@@ -38,7 +38,7 @@ function Contact() {
           <FaLinkedin />
           <h3>LinkedIn</h3>
           <a
-            href="https://www.linkedin.com/in/prabhu-r-b5bb2483/"
+            href="https://www.linkedin.com/in/prabhu-r-vrdev"
             target="_blank"
             rel="noreferrer"
           >

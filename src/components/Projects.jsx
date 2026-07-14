@@ -2,10 +2,12 @@ import { useState } from "react";
 import "../styles/projects.css";
 import ProjectModal from "./ProjectsModal.jsx";
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Residential Walkthrough",
-    image: "/images/projects/residential.jpg",
+    image: "${base}images/projects/residential.jpg",
     tech: "Unreal Engine • SteamVR",
     description:
       "An interactive architectural walkthrough that enables users to explore residential spaces with realistic lighting, materials, and smooth navigation in a fully immersive VR environment.",
@@ -13,12 +15,12 @@ const projects = [
     confidential: false,
 
     type: "video",
-    video: "/videos/Residential_VR_demo.webm",
+    video: "${base}videos/Residential_VR_demo.webm",
   },
 
   {
     title: "Car Configurator",
-    image: "/images/projects/car-configurator.jpg",
+    image: "${base}images/projects/car-configurator.jpg",
     tech: "Unreal Engine • Blueprint",
     description:
       "Developed a real-time vehicle configurator allowing users to customize colors, materials, and visual options while maintaining high rendering performance.",
@@ -28,16 +30,16 @@ const projects = [
     type: "gallery",
 
     images: [
-      "/images/gallery/car1.png",
-      "/images/gallery/car2.png",
-      "/images/gallery/car3.png",
-      "/images/gallery/car4.png",
+      "${base}images/gallery/car1.png",
+      "${base}images/gallery/car2.png",
+      "${base}images/gallery/car3.png",
+      "${base}images/gallery/car4.png",
     ],
   },
 
   {
     title: "Office Virtual Tour",
-    image: "/images/projects/office-tour.JPG",
+    image: "${base}images/projects/office-tour.JPG",
     tech: "Everpano • WebVR",
     description:
       "Created a browser-based 360° virtual office experience featuring hotspot navigation and interactive information points for remote client presentations.",
@@ -47,12 +49,12 @@ const projects = [
     type: "tour",
 
     // Replace this with your real 360 URL
-    url: "/tours/UE4_Office_Interior_360/index.html",
+    url: "${base}tours/UE4_Office_Interior_360/index.html",
   },
 
 {
   title: "Industrial Training Simulator",
-  image: "/images/projects/placeholder.png",
+  image: "${base}images/projects/placeholder.png",
   tech: "Unity • OpenXR",
 
   confidential: true,
@@ -71,7 +73,7 @@ const projects = [
 
 {
   title: "Forklift Training Simulator",
-  image: "/images/projects/placeholder.png",
+  image: "${base}images/projects/placeholder.png",
   tech: "Unity • XR Interaction Toolkit",
 
   confidential: true,
@@ -90,7 +92,7 @@ const projects = [
 
   {
     title: "Sofa AR",
-    image: "/images/projects/Sofa_ar.png",
+    image: "${base}images/projects/Sofa_ar.png",
     tech: "Unity • Vuforia",
     description:
       "Built a marker-based AR application that enables users to visualize furniture placement within real-world environments",
@@ -98,7 +100,7 @@ const projects = [
     confidential: false,
     
     type: "video",
-    video: "/videos/SofaAR.webm",
+    video: "${base}videos/SofaAR.webm",
   },
 ];
 
