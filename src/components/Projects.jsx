@@ -7,7 +7,7 @@ const base = import.meta.env.BASE_URL;
 const projects = [
   {
     title: "Residential Walkthrough",
-    image: "${base}images/projects/residential.jpg",
+    image: `${base}images/projects/residential.jpg`,
     tech: "Unreal Engine • SteamVR",
     description:
       "An interactive architectural walkthrough that enables users to explore residential spaces with realistic lighting, materials, and smooth navigation in a fully immersive VR environment.",
@@ -30,10 +30,10 @@ const projects = [
     type: "gallery",
 
     images: [
-      "${base}images/gallery/car1.png",
-      "${base}images/gallery/car2.png",
-      "${base}images/gallery/car3.png",
-      "${base}images/gallery/car4.png",
+      `${base}images/gallery/car1.png`,
+      `${base}images/gallery/car2.png`,
+      `${base}images/gallery/car3.png`,
+      `${base}images/gallery/car4.png`,
     ],
   },
 
@@ -49,12 +49,12 @@ const projects = [
     type: "tour",
 
     // Replace this with your real 360 URL
-    url: "${base}tours/UE4_Office_Interior_360/index.html",
+    url: `${base}tours/UE4_Office_Interior_360/index.html`,
   },
 
 {
   title: "Industrial Training Simulator",
-  image: "${base}images/projects/placeholder.png",
+  image: `${base}images/projects/placeholder.png`,
   tech: "Unity • OpenXR",
 
   confidential: true,
@@ -73,7 +73,7 @@ const projects = [
 
 {
   title: "Forklift Training Simulator",
-  image: "${base}images/projects/placeholder.png",
+  image: `${base}images/projects/placeholder.png`,
   tech: "Unity • XR Interaction Toolkit",
 
   confidential: true,
@@ -92,7 +92,7 @@ const projects = [
 
   {
     title: "Sofa AR",
-    image: "${base}images/projects/Sofa_ar.png",
+    image: `${base}images/projects/Sofa_ar.png`,
     tech: "Unity • Vuforia",
     description:
       "Built a marker-based AR application that enables users to visualize furniture placement within real-world environments",
@@ -100,7 +100,7 @@ const projects = [
     confidential: false,
     
     type: "video",
-    video: "${base}videos/SofaAR.webm",
+    video: `${base}videos/SofaAR.webm`,
   },
 ];
 

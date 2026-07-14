@@ -2,6 +2,8 @@ import "../styles/hero.css";
 
 function Hero(){
 
+     const base = import.meta.env.BASE_URL;
+
     return(
 
 <section id= "hero" className="hero section">
@@ -37,7 +39,7 @@ Building immersive VR, AR, and XR applications using Unity and Unreal Engine for
     </a>
 
     <a
-        href="/resume/P_Ragu_Resume.pdf"
+        href={`${base}resume/Prabhu_Resume.pdf`}
         className="secondary"
         download >
         Download Resume
