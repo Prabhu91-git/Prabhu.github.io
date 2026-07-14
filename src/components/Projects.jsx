@@ -15,12 +15,12 @@ const projects = [
     confidential: false,
 
     type: "video",
-    video: "${base}videos/Residential_VR_demo.webm",
+    video: '${base}videos/Residential_VR_demo.webm',
   },
 
   {
     title: "Car Configurator",
-    image: "${base}images/projects/car-configurator.jpg",
+    image: '${base}images/projects/car-configurator.jpg',
     tech: "Unreal Engine • Blueprint",
     description:
       "Developed a real-time vehicle configurator allowing users to customize colors, materials, and visual options while maintaining high rendering performance.",
